@@ -1,8 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MenuManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Data/Dialogue.txt">
     <Files>
-      <File FileName="Assets/Scripts/MenuManager.cs" Line="29" Column="29" />
+      <File FileName="Assets/Scripts/DialogueParser.cs" Line="35" Column="31" />
+      <File FileName="Assets/Scripts/DialogueManager.cs" Line="93" Column="6" />
+      <File FileName="Assets/Scripts/ChoiceButton.cs" Line="37" Column="18" />
+      <File FileName="Assets/Scripts/MenuManager.cs" Line="40" Column="1" />
+      <File FileName="Assets/Data/Dialogue.txt" Line="6" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -10,9 +10,12 @@ public class MenuManager : MonoBehaviour {
 	public Text startText;
 	public Text titleText;
 
+	public bool menuEnabled = false;
+
 	Animator anim;
 
 	void Start () {
+		menuEnabled = true;
 		aud = GetComponent <AudioSource> ();
 		startButton = GetComponent <Button> ();
 		anim = GetComponent <Animator> ();
@@ -20,14 +23,19 @@ public class MenuManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (titleText.color.a == 0) {
+			Destroy (titleText);
+			Destroy (startText);
+			menuEnabled = false;
+		}
 	}
 
 	public void enterButton () {
 		aud.Play ();
 
 		anim.SetTrigger ("Start");
-
 	}
+
+
 
 }
