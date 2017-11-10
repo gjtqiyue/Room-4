@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 27fdb65f16ffe48a5a3ec6a6d5a47902
+timeCreated: 1510295645
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Albertsthal Typewriter
+  fontNames:
+  - Albertsthal Typewriter
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

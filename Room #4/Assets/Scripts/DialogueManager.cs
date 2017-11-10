@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour {
 	public Text dayBox;
 	public Text nameBox;
 	public GameObject choiceBox;
+	public AudioSource aud;
+	public AudioClip typeSound;
 
 	void Start () {
 		dialogue = "";
@@ -33,6 +35,7 @@ public class DialogueManager : MonoBehaviour {
 		lineNum = 0;
 		menu = GetComponent<MenuManager> ();
 		anim.GetComponent<Animator> ();
+		aud.GetComponent <AudioSource> ();
 	}
 
 	void Update () {
@@ -121,6 +124,8 @@ public class DialogueManager : MonoBehaviour {
 	IEnumerator TypeWriterEffect(){
 		for (int i=0; i<dialogue.Length+1; i++) {
 			dialogueBox.text = dialogue.Substring (0, i);
+			aud.clip = typeSound;
+			aud.Play ();
 			yield return new WaitForSeconds (delayTime);
 		}
 		StopCoroutine (TypeWriterEffect ());

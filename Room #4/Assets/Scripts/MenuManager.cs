@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour {
 
+	public Light light;
 	public AudioSource aud;
 	public Button startButton;
 	public Text startText;
@@ -24,6 +25,7 @@ public class MenuManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (titleText.color.a == 0) {
+			Destroy (light);
 			Destroy (titleText);
 			Destroy (startText);
 			menuEnabled = false;
