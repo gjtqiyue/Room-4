@@ -38,7 +38,16 @@ public class ChoiceButton : MonoBehaviour {
 			print (box.lineNum);
 		}
 		else if (command == "scene") {
-			EditorSceneManager.LoadScene ("Scene" + commandModifier);
+			EditorSceneManager.LoadScene ("Main");
 		}
+        else if (command == "pill")
+        {
+            box.ClearText();
+            box.lineNum = int.Parse(commandModifier);
+            box.ShowDialogue();
+            box.lineNum++;
+            print(box.lineNum);
+            box.pillTaken++;
+        }
 	}
 }

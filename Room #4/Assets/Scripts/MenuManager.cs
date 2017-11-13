@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour {
 
+    public DialogueManager dialogueManager;
 	public Light light;
 	public AudioSource aud;
 	public Button startButton;

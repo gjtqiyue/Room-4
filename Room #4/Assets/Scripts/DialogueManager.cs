@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour {
 
 	public string dialogue, characterName, day;
 	public int lineNum;
+    public int pillTaken = 0;
 	string[] options;
 	public float delayTime = 0.3f;
 	List<Button> buttons = new List<Button> ();
@@ -26,6 +27,8 @@ public class DialogueManager : MonoBehaviour {
 	public AudioSource aud;
 	public AudioClip typeSound;
 
+    private bool intro = false;
+
 	void Start () {
 		dialogue = "";
 		characterName = "";
@@ -39,14 +42,34 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Y) && playerTalking == false && menu.menuEnabled == false) {
+		if (menu.menuEnabled == false) {
+            if (intro == false)
+            {
+                dialogueBox.text = "Press Y to start";
+                intro = true;
+            }
 
-			ShowDialogue();
+            // Pill ending condition
+            if (lineNum == 184)
+            {
+                if (pillTaken < 4)
+                {
+                    lineNum = 189;
+                }
+                else
+                {
+                    lineNum = 185;
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Y) && playerTalking == false && intro == true)
+            {
+                ShowDialogue();
 
 
 
-			lineNum++;
-
+                lineNum++;
+            }
 
 		}
 
@@ -58,26 +81,37 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	void ParseLine () {
-		if (parser.GetName (lineNum) == "Day") {
-			playerTalking = false;
-			ClearText ();
-			day = parser.GetContent (lineNum);
-			ShowDay ();
-		}
-		else if (parser.GetName (lineNum) != "Player" && parser.GetName (lineNum) != "Day") {
-			playerTalking = false;
-			characterName = parser.GetName (lineNum);
-			dialogue = parser.GetContent (lineNum);
-			//dialogue = dialogue.Replace ('$', '\n');
-			StartCoroutine (TypeWriterEffect());
-		} else {
-			playerTalking = true;
-			options = parser.GetOptions (lineNum);
-			CreateButtons ();
-		}
+        if (parser.GetName(lineNum) == "Day")
+        {
+            playerTalking = false;
+            dialogueBox.text = "";
+            ClearText();
+            day = parser.GetContent(lineNum);
+            ShowDay();
+        }
+        else if (parser.GetName(lineNum) != "Player" && parser.GetName(lineNum) != "Day")
+        {
+            playerTalking = false;
+            characterName = parser.GetName(lineNum);
+            dialogue = parser.GetContent(lineNum);
+            dialogue = dialogue.Replace('$', '\n');
+            StartCoroutine(TypeWriterEffect());
+
+
+        }
+        else
+        {
+            playerTalking = true;
+            options = parser.GetOptions(lineNum);
+            CreateButtons();
+        }
 	}
 
 	void CreateButtons() {
+        if (options.Length == 1)
+        {
+
+        }
 		for (int i = 0; i < options.Length; i++) {
 			hasChoice = true;
 			GameObject button = (GameObject)Instantiate (choiceBox);
@@ -87,7 +121,12 @@ public class DialogueManager : MonoBehaviour {
 			cb.option = options [i].Split (':') [1];
 			cb.box = this;
 			b.transform.SetParent (this.transform);
-			b.transform.localPosition = new Vector3 (-200 + (i*400), -100);
+            if (options.Length == 1)
+            {
+                b.transform.localPosition = new Vector3(0, -130);
+            }
+            else
+                b.transform.localPosition = new Vector3 (-200 + (i*400), -130);
 			b.transform.localScale = new Vector3 (1, 1, 1);
 			buttons.Add (b);
 		}

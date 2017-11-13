@@ -13,11 +13,13 @@ public class DialogueParser : MonoBehaviour {
 	struct DialogueLine {
 		public string name;
 		public string content;
+        //public string music;
 		public string[] options;
 
 		public DialogueLine (string Name, string Content) {
 			name = Name;
 			content = Content;
+            //music = Music;
 			options = new string[0];
 		}
 	}
@@ -81,7 +83,16 @@ public class DialogueParser : MonoBehaviour {
 		return "";
 	}
 
-	public string[] GetOptions (int lineNumber) {
+
+    //public string GetMusic(int lineNumber)
+    //{
+    //    if (lineNumber < lines.Count)
+    //        return lines[lineNumber].music;
+
+    //    return "";
+    //}
+
+    public string[] GetOptions (int lineNumber) {
 		if (lineNumber < lines.Count)
 			return lines [lineNumber].options;
 

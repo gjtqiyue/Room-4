@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44646907, g: 0.49630952, b: 0.57472605, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -650,7 +650,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263.39996, y: 208.15}
+  m_AnchoredPosition: {x: -261.9, y: 302}
   m_SizeDelta: {x: 231.2, y: 57.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634911033
@@ -685,7 +685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Day 1
+  m_Text: 
 --- !u!222 &634911034
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -843,7 +843,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Room #4'
+  m_Text: Room 4
 --- !u!222 &1465330947
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -965,6 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece53f388d12743bb9cfe7870ee64217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 1576303339}
   light: {fileID: 1757425780}
   aud: {fileID: 1576303337}
   startButton: {fileID: 82448263}
@@ -1079,12 +1080,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c55ff0fc228e43e382cce856acd4444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 0}
+  menu: {fileID: 1576303336}
   anim: {fileID: 1576303338}
   dialogue: 
   characterName: 
   day: 
   lineNum: 0
+  pillTaken: 0
   delayTime: 0.05
   playerTalking: 0
   hasChoice: 0
@@ -1153,7 +1155,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757425779}
   m_LocalRotation: {x: 0.0057755494, y: 0.2623758, z: 0.30938143, w: 0.914007}
-  m_LocalPosition: {x: -388.2, y: -241.5, z: -16}
+  m_LocalPosition: {x: -387.4, y: -240.8, z: -16.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1576303335}
