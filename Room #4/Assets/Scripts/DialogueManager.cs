@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour {
     public int pillTaken = 0;
 	string[] options;
 	public float delayTime = 0.3f;
-	List<Button> buttons = new List<Button> ();
+	List<Text> buttons = new List<Text> ();
 	//not sure if I need it
 	public bool playerTalking;
 	public bool hasChoice = false;
@@ -115,7 +115,7 @@ public class DialogueManager : MonoBehaviour {
 		for (int i = 0; i < options.Length; i++) {
 			hasChoice = true;
 			GameObject button = (GameObject)Instantiate (choiceBox);
-			Button b = button.GetComponent<Button> ();
+			Text b = button.GetComponent<Text> ();
 			ChoiceButton cb = button.GetComponent<ChoiceButton> ();
 			cb.SetText (options [i].Split (':') [0]);
 			cb.option = options [i].Split (':') [1];
@@ -149,7 +149,7 @@ public class DialogueManager : MonoBehaviour {
 	void ClearButtons () {
 		for (int i = 0; i < buttons.Count; i++) {
 			//print ("Clearing buttons");
-			Button b = buttons [i];
+			Text b = buttons [i];
 			buttons.Remove (b);
 			Destroy (b.gameObject);
 		}
