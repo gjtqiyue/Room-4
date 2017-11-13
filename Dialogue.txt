@@ -40,12 +40,12 @@ Luke;After Pete has showed me the café, TV room, garden, it is already night. W
 Luke;It turned out that Allie and Kate had separate rooms in same hallway as Pete and me.;
 Luke;On my bed was a silver tray with a green capsule on top. “What is this Pete?”;
 Pete; "Oh, the pills? They're harmless! It's just to help us to sleep calmly. That's all.";
-Player; Take pills:line,48;I will save pills for another night:line,49
+Player;Take pills:line,48;I will save pills for another night:line,49
 Luke;I walked around the room and saw Pete’s patient description card on his bed frame.;
 Luke;PTSD, that’s Post Traumatic Stress Disorder. But Pete seems like a normal person, at least for now.;
 Luke; I tried to recall my past. My age, my parents, my home, my hobbies…Yet my mind is still blank. The thought of having amnesia filled myself with dread. ;
 Luke;On my bed was a silver tray with a green capsule on top. The label reads “Sleeping pills: one per day”.;
-Player; Take pills:line,48;I will save pills for another night:line,49
+Player;Take pills:line,48;I will save pills for another night:line,49
 Luke;As soon as I gobbled down the pill with water, sleepiness overwhelmed me and I fell into a deep slumber.;
 Day;Night 1;
 Pete; As I lay in the bathtub trying to sleep, I thought about my new roommate, Luke.;
@@ -91,7 +91,7 @@ Luke; Kate's blood-soaked body was dangling off the bed. I turned away in disgus
 Luke;Written in blood, was my name in block letters.;
 Pete; “That’s what I was talking about.” said Pete as he pointed to my name on the wall.;
 Luke;I eyed the bloody words in horror. What does this mean? Would I be the next victim?As time slips by, it's already night;
-Player; Take pills:line,94;I will save later:line,94
+Player;Take pills:line,94;I will save later:line,94
 Day;Night 2;
 Pete;I was still a bit shaken by the dreadful incident but I managed to calm down a bit.;
 Pete; When I was positive Luke had fallen asleep, I headed for the bathroom.;
