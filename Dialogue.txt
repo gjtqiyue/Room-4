@@ -34,11 +34,11 @@ Allie;I saw them carrying you into your room. You were tied to a gurney and yell
 Luke;I don’t remember any of this matter. If what she said was true, then this means I was forced to transfer to this hospital.;
 Kate;“By the way, remember to take the pills every night.”;
 Luke;“Pills?”;
-Allie;“Remember to take the medication every day or you will by crazy!”;
+Allie;“Remember to take the medication every day or you will be crazy!”;
 Luke;This is a joke? However, I was not in the mood for laughter.;
 Luke;after Pete has showed me the café, TV room, garden, it is already night. We went back to our rooms. ;
 Luke;It turned out that Allie and Kate had separate rooms in same hallway as Pete and me.;
-Luke;On your bed was a silver tray with a green capsule on top. “What is this Pete?”;
+Luke;On my bed was a silver tray with a green capsule on top. “What is this Pete?”;
 Pete; "Oh, the pills? They're harmless! It's just to help us to sleep calmly. That's all.";
 Player; Take pills:line,48;I will save pills for another night:line,49
 Luke;I walked around the room and saw Pete’s patient description card on his bedframe.;
@@ -60,7 +60,7 @@ Pete;I woke from my nightmare and all I can see is white. The pure whiteness of 
 Pete;I tried to kick my legs and move my arms, but they are tied together by a rope.;
 Pete;My oxygen level quickly plummeted and I lost my consciousness.; DIED 
 Pete; I hope Luke didn't notice my absence.;
-Pete;The bathroom is the only room in the asylum has a locked door, aside from the rubber room.;
+Pete;The bathroom is the only room in the asylum that has a locked door, aside from the rubber room.;
 Pete; A scream pierced my ears.;
 Pete;At this place, people scream night and day.;
 Pete;But this scream was different and it gave me the shivers.;
