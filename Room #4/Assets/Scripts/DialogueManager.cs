@@ -123,7 +123,7 @@ public class DialogueManager : MonoBehaviour {
 			b.transform.SetParent (this.transform);
             if (options.Length == 1)
             {
-                b.transform.localPosition = new Vector3(0, -130);
+                b.transform.localPosition = new Vector3(0, -170);
             }
             else
                 b.transform.localPosition = new Vector3 (-250 + (i*500), -170);
