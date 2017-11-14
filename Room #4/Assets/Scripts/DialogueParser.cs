@@ -1,13 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.Text;
-using System.IO;
-using System.Text.RegularExpressions;
 
 public class DialogueParser : MonoBehaviour {
+
 
 	struct DialogueLine {
 		public string name;
@@ -25,31 +21,29 @@ public class DialogueParser : MonoBehaviour {
 		
 	List <DialogueLine> lines;
 
-	void Start () {
-		string file = "Assets/Data/Dialogue";
-		string sceneNum = SceneManager.GetActiveScene ().name;
-		sceneNum = Regex.Replace (sceneNum, "[^0-9]", "");
-		file += sceneNum;
-		file += ".txt";
+    public TextAsset dialogue;
 
+	void Start () {
 		lines = new List<DialogueLine> ();
 		Debug.Log ("start loading");
-		LoadDialogue (file);
+		LoadDialogue ();
 	}
 
 	void Update () {
 		
 	}
 
-	void LoadDialogue (string filename) {
-		string line;
-		StreamReader r = new StreamReader (filename);
+	void LoadDialogue () {
+		string[] line;
+        //StreamReader r = new StreamReader (filename);
+        int j = 0;
 
-		using (r) {
-			do {
-				line = r.ReadLine ();
-				if (line != null) {
-					string[] lineData = line.Split (';');
+        do {
+            
+                line = dialogue.text.Split('\n');
+				if (line[j] != null) {
+					string[] lineData = line[j].Split (';');
+                    j++;
 					if (lineData [0] == "Player") {
 						DialogueLine lineEntry = new DialogueLine (lineData [0], "");
 						lineEntry.options = new string[lineData.Length - 1];
@@ -63,9 +57,8 @@ public class DialogueParser : MonoBehaviour {
 						lines.Add (lineEntry);
 					}
 				}
-			} while (line != null);
-			r.Close ();
-		}
+			} while (line[j] != null);
+		
 	}
 
 	public string GetName (int lineNumber) {
