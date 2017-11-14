@@ -59,7 +59,7 @@ Pete;The dream seemed so real as I felt my airway was blocked and I couldn’t b
 Pete;I woke from my nightmare and all I can see is white. The pure whiteness of a pillow. I tried to scream but the pillow has damped my sound.;;
 Pete;I tried to kick my legs and move my arms, but they are tied together by a rope.;;
 Pete;My oxygen level quickly plummeted and I lost my consciousness.;;
-Player;Go back to menu:scene,0
+Player;You died:scene,0
 Pete;I hope Luke didn't notice my absence.;;
 Pete;The bathroom is the only room in the asylum that has a locked door, aside from the rubber room.;;
 Pete;A scream pierced my ears.;;
@@ -116,7 +116,7 @@ Pete;This is not good…;;
 Pete;I ran quickly as I possibly can towards the bathroom. But….;;
 Pete;A sharp pain in my back has stopped me from taking another step.;;
 Pete;My vision started to blue and I fell onto the cold floor. ;Died;;
-Player;Go back to menu:scene,0
+Player;You died:scene,0
 Pete;The fear of getting killed overwhelmed me as the screaming got muffled and got silent;;
 Pete;I worked up the courage to take a peek at the scene outside. The door to Allie’s dorm was ajar. ;;
 Pete;From this angle, I could see again the red writing on the walls. LUKE. The blood is still oozing down the walls from the letters.;;
@@ -143,7 +143,7 @@ Luke; What is she saying? I cannot understand a word. Clearly she didn’t take 
 Allie;"I am going to end this one and for all." What is she talking about?;;
 Luke;Just she finished talking, she pulled a knife out of her doll and charged towards me;;
 Luke;It happened in a blink of eye. I didn’t have time to dodge and it went straight into my chest. ;Died;;
-Player;Go back to menu:scene,0
+Player;You died:scene,0
 Luke;I saw the door to the Doctor’s office is open. And I peeked in and no one is there;;
 Luke;The key of the file cabinet is still attached onto the drawer.;;
 Luke;I pulled the drawer open and went through it, hoping to find my file;;
@@ -158,7 +158,7 @@ Pete;Then I sensed someone blowing air to my ear and whisper:;;
 Pete;"I’ve found you Pete!";;
 Pete;I quickly opened my eyes but the silver glint of a blade blinded my eyes.;;
 Pete;And silver was the last colour I ever saw. ;Died;;
-Player;Go back to menu:scene,0
+Player;You died:scene,0
 Pete;where should I investigate?;;
 Player;Rubber room:line,163;Allie’s room:line,172
 Pete;I saw Allie standing in front of the rubber room;;
@@ -169,7 +169,7 @@ Pete;"What does Luke have to do with this?";;
 Allie Then I saw her pulling a knife from her doll and charged towards me.;;
 Allie;Shit, she is really behind these killings;;
 Pete;Then she stabbed me with the knife. ;Died;;
-Player;Go back to menu:scene,0
+Player;You died:scene,0
 Pete;I went to Allie’s room, trying to fetch some clues about the killings;;
 Pete;Then I saw a notebook on her bed. It’s her diary.;;
 Pete;It’s no time to read it now. I should read it in a safer place. So I grabbed the diary and left the room;;
@@ -186,7 +186,7 @@ Skip;If  pill < 4: line,189 ; if pill >= 4: line,185
 Luke;My vision started to shake. I leaned against the wall to gain balance.;;
 Luke;This must be the consequence of over dosage.;;
 Luke;Gradually, blackness engulfed me. I have lost my conscience completely. ;Died;;
-Player;Go back to menu:scene,0
+Player;You died:scene,0
 Luke;Pete knocked my doors and showed me Allie’s diary. ;;
 Luke;He said he is sure that Allie is the murderer because she has Schizophrenia.;;
 Luke;Her diary is filled with descriptions of the different ways of murdering people;;
@@ -223,8 +223,8 @@ Luke;I slowly opened my eyelids, I was lying on a white bed and a fan was swirli
 Luke;Somehow this scene seemed strangely familiar. Where am I and what's going on?;;
 Luke;I turned my head and saw the newspaper lying beside the bedpost;;
 Luke;"Massacre in Berkeley Asylum", the words were familiar too. How?;;
-Luke;Then out of nowhere, I remembered one thing, my name is Luke END;;
-Player;Menu:scene:0
+Luke;Then out of nowhere, I remembered one thing, my name is Luke.;;
+Player;Thanks for playing:scene,0
 Pete;I turned the doorknob of the Doctors room. Just like I expected, that careless doc didn’t lock his door;;
 Pete;I wanted to find Allie’s file but the file cabinet is locked.;;
 Pete;I quickly scanned around, looking for the key. I opened the drawer under the desk and I saw a pistol lying inside.;;
@@ -255,4 +255,4 @@ Luke;"I’ve found you Pete.";;
 Pete;"I’ve also found you Luke.";;
 Pete;when Luke pulled the knife from Allie's corpse, I also pulled the gun from my pocket and pulled the trigger.;;
 Ending; END;;
-Player;Menu:scene:0
+Player;Thanks for playing:scene,0

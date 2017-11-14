@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	void Update () {
-		if (menu.menuEnabled == false) {
+        if (menu.menuEnabled == false && menu.gameStart == true) {
             if (intro == false)
             {
                 dialogueBox.text = "Press Y to start";
@@ -174,4 +174,6 @@ public class DialogueManager : MonoBehaviour {
 		dayBox.text = day;
 		anim.Play ("DayFade");
 	}
+
+   
 }

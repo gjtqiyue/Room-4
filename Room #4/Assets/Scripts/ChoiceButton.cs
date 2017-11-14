@@ -8,10 +8,11 @@ public class ChoiceButton : MonoBehaviour {
 
 	public string option;
 	public DialogueManager box;
+    public AudioSource aud;
 
 
 	void Start () {
-		
+        aud.GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -38,7 +39,8 @@ public class ChoiceButton : MonoBehaviour {
 			print (box.lineNum);
 		}
 		else if (command == "scene") {
-			SceneManager.LoadScene ("Main");
+            aud.Play();
+            SceneManager.LoadScene("Main");
 		}
         else if (command == "pill")
         {
@@ -50,4 +52,5 @@ public class ChoiceButton : MonoBehaviour {
             box.pillTaken++;
         }
 	}
+
 }

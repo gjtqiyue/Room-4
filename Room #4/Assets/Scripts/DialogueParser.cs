@@ -38,26 +38,26 @@ public class DialogueParser : MonoBehaviour {
         //StreamReader r = new StreamReader (filename);
         int j = 0;
 
-        do {
+       
             
-                line = dialogue.text.Split('\n');
-				if (line[j] != null) {
-					string[] lineData = line[j].Split (';');
-                    j++;
-					if (lineData [0] == "Player") {
-						DialogueLine lineEntry = new DialogueLine (lineData [0], "");
-						lineEntry.options = new string[lineData.Length - 1];
+        line = dialogue.text.Split('\n');
+		while (j < line.Length) {
+			string[] lineData = line[j].Split (';');
+            j++;
+			if (lineData [0] == "Player") {
+				DialogueLine lineEntry = new DialogueLine (lineData [0], "");
+				lineEntry.options = new string[lineData.Length - 1];
 
-						for (int i = 1; i < lineData.Length; i++) {
-							lineEntry.options [i - 1] = lineData [i];
-						}
-						lines.Add (lineEntry);
-					} else {
-						DialogueLine lineEntry = new DialogueLine (lineData [0], lineData [1]);
-						lines.Add (lineEntry);
-					}
+				for (int i = 1; i < lineData.Length; i++) {
+					lineEntry.options [i - 1] = lineData [i];
 				}
-			} while (line[j] != null);
+				lines.Add (lineEntry);
+			} else {
+				DialogueLine lineEntry = new DialogueLine (lineData [0], lineData [1]);
+				lines.Add (lineEntry);
+			}
+		}
+		
 		
 	}
 
