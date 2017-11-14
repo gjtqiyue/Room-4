@@ -11,7 +11,7 @@ Luke;I tried to recall my past but nothing popped up except my name: Luke. Somet
 Luke;It’s like someone has deleted all the files, leaving you with just the empty folder itself.... ;;
 Luke;Suddenly, I heard someone knocking the door;;
 Pete;"Hey! You are awake!";;
-Luke;I saw a boy about my age, grinning at me. The fact that he is here means he is also a patient.;;
+Luke;I saw a boy about my age, grinning at me. The fact that he is here means he‘s also a patient.;;
 Pete;"Welcome to Room 4 of The Berkeley Asylum for Troubled Youth. I’m Pete.";;
 Luke;"Hi, I’m Luke. Nice to meet you.";;
 Luke;A bad feeling was rising up in my chest. $Should I befriend with this guy?;;
@@ -35,7 +35,7 @@ Luke;I don’t remember any of this matter. $If what she said was true, then thi
 Kate;"By the way, remember to take the pills every night.";;
 Luke;"Pills?";;
 Allie;"Remember to take the medication every day or you will be crazy!";;
-Luke;This is a joke? However, I was not in the mood for laughter.;;
+Luke;Is this a joke? However, I was not in the mood for laughter.;;
 Luke;After Pete has showed me the café, TV room, garden, it is already night. We went back to our rooms. ;;
 Luke;It turned out that Allie and Kate had separate rooms in same hallway as Pete and me.;;
 Luke;On my bed was a silver tray with a green capsule on top. "What is this Pete?";;
@@ -52,7 +52,7 @@ Pete;As I lay in the bathtub trying to sleep, I thought about my new roommate, L
 Pete;What was his disorder?; I hope he took the ‘sleeping pills’ because people here are too dangerous. They need the pills to calm down.;;
 Pete;Ever since I came to this ugly place, I decided to sleep in the public bathroom at night. ;;
 Pete;But Luke seems not too dangerous. Should I sleep in room 4 today then?;;
-Player;Sleep in room 4:line,55;No, it’s better to be safe:line,61
+Player;Sleep in room 4:line,55;No, it’s better to be safe:line,62
 Pete;After I climbed onto my bed and closed my eyes, I fell into sleep.;;
 Pete;In my dream, I was sleeping when someone puts a pillow on top of my face, trying to suffocate me to death.;;
 Pete;The dream seemed so real as I felt my airway was blocked and I couldn’t breathe anymore.;;
@@ -102,7 +102,7 @@ Pete;Am I going to be killed like Kate as well?;;
 Pete;I decided to give it a rest and go to sleep. But a loud screech in the hallway stirred me awake.;;
 Pete;Another murder?; ;
 Pete;Should I go out and check? What if I get murdered too?;;
-Player;Go out to check:line,105; Stay:line,118
+Player;Go out to check:line,105; Stay:line,119
 Pete;Another scream echoed in the hallway. This time, it was coming from Allie’s room.;;
 Pete;I worked up the courage to take a peek at the scene outside.;;
 Pete;The door to Allie’s door was ajar. As I slowly opened the door, my eyes peered over the side of the white bathroom door;;
@@ -133,7 +133,7 @@ Pete;"Luke, you don't have a slight idea of why your name is written on the murd
 Luke;What, he is suspicious of me now?  Who on earth is stupid enough to write down his own name after he has committed a murder?;;
 Luke;But I don't want to quarrel with him right now. The killer is definitely after me. He wants something from me. What does he want?;;
 Luke;As I  wondered in the hospital, I saw Allie standing in front of the rubber room, with a new doll in her arms.;;
-Player;Talk to her:line,136;Walk away:line,145;;
+Player;Talk to her:line,136;Walk away:line,146;;
 Allie;"Luke, I saw it. I saw it all. Hahahahahaha. No one can fool me. You want to know who killed them?";;
 Luke;She’s not in a normal mental state right now. ;;
 Allie;"Oh look you don’t know a thing, do you? Luke, the newbie who arrived days earlier.";;

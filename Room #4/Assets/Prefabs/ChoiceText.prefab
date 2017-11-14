@@ -51,7 +51,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 27fdb65f16ffe48a5a3ec6a6d5a47902, type: 3}
-    m_FontSize: 20
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -150,5 +150,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.7397766, y: -0.74035645}
-  m_SizeDelta: {x: 201.84, y: 139.4}
+  m_SizeDelta: {x: 204.37, y: 174.1}
   m_Pivot: {x: 0.5, y: 0.5}

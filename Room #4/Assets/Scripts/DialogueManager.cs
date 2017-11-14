@@ -126,7 +126,7 @@ public class DialogueManager : MonoBehaviour {
                 b.transform.localPosition = new Vector3(0, -130);
             }
             else
-                b.transform.localPosition = new Vector3 (-200 + (i*400), -130);
+                b.transform.localPosition = new Vector3 (-250 + (i*500), -170);
 			b.transform.localScale = new Vector3 (1, 1, 1);
 			buttons.Add (b);
 		}

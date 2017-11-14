@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class ChoiceButton : MonoBehaviour {
 
@@ -38,7 +38,7 @@ public class ChoiceButton : MonoBehaviour {
 			print (box.lineNum);
 		}
 		else if (command == "scene") {
-			EditorSceneManager.LoadScene ("Main");
+			SceneManager.LoadScene ("Main");
 		}
         else if (command == "pill")
         {
