@@ -1,19 +1,30 @@
+# Room #4
+
 Game project made by Unity
+
 Visual novel
-Room #4
 
 He woke up......finding himself lying in a room with number 4, and he found some mysterious pills beside him....
+
 What happened to him? Where is him? and why is he here?
+
 The truth is being revealed as he digs deeper and deeper, as well as the greater danger.
+
 Can he get out of there and find his identity successfully? or just remain like others....
+
 This is all this about, try to survive and reach the end
 
-Description:
+## Description:
+
 A visual novel game featuring choice making game play and multiple ending.
+
 Goal: survive to the end and escape.
+
 GamePlay: choice making
 
-Programming:
+HowToPlay: open the project in Unity, all the scripts is in the script folder
+
+# Programming:
 - All programmed in C#
 - Game manager that manages the game flow, and trigger the event when certain choice is made.
 - Event trigger system that will redirect the line pointer to point at different dialogue when the player makes different choice. This create the dynamic responsive effect, to make the character more vivid.
