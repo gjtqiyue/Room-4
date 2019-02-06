@@ -1,8 +1,8 @@
 # Room #4
 
-Game project made by Unity
+- Game project made by Unity
 
-Visual novel
+- Visual novel
 
 He woke up......finding himself lying in a room with number 4, and he found some mysterious pills beside him....
 
@@ -24,7 +24,7 @@ GamePlay: choice making
 
 HowToPlay: open the project in Unity, all the scripts is in the script folder
 
-# Programming:
+## Programming features:
 - All programmed in C#
 - Game manager that manages the game flow, and trigger the event when certain choice is made.
 - Event trigger system that will redirect the line pointer to point at different dialogue when the player makes different choice. This create the dynamic responsive effect, to make the character more vivid.
